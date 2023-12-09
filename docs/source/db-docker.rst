@@ -36,6 +36,24 @@ MySQLデータベースコンテナを作成します。
 
    docker compose -f docker-compose.dev.yml up -d db
 
+コンテナが起動していることを確認します。
+
+.. code-block:: bash
+
+   docker compose -f docker-compose.dev.yml ps
+
+.. code-block::
+
+   NAME                IMAGE                      COMMAND                  SERVICE             CREATED             STATUS                   PORTS
+   mysql               mysql:8                    "docker-entrypoint.s…"   db                  6 minutes ago       Up 6 minutes (healthy)   0.0.0.0:3306->3306/tcp, :::3306->3306/tcp, 33060/tcp
+
+ログにエラーがないことを確認します。
+
+.. code-block:: bash
+
+   docker compose -f docker-compose.dev.yml logs
+
+
 MySQLのデータベースに接続できることを確認します。
 
 .. code-block:: bash

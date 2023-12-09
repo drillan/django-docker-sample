@@ -11,8 +11,8 @@
 
 .. literalinclude:: ../../mysite/mysite/settings.py
    :language: python
-   :lines: 25-32
-   :emphasize-lines: 1,5,8
+   :lines: 24-32
+   :emphasize-lines: 2,6,9
    :caption: ``mysite/mysite/settings.py``
 
 .. literalinclude:: ../../mysite/mysite/settings.py
